@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
 import swaglabs.actions.InventorySteps;
 import swaglabs.actions.LoginSteps;
+import swaglabs.utils.DataReader;
 
 public class LoginStepDefs {
 
@@ -22,7 +23,8 @@ public class LoginStepDefs {
 
     @When("I login with credentials {string} and {string}")
     public void iLoginWithCredentialsAnd(String username, String password) {
-        login.loginWithCredentials(username, password);
+        DataReader loginData = DataReader.initialize("login_data");
+        login.loginWithCredentials(loginData.getString(username), loginData.getString(password));
     }
 
     @Then("I verify that the login is successful")
