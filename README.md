@@ -2,10 +2,7 @@
 
 ## Índice
 
-1. [Objetivo del Repositorio](#Objetivo)
-2. [Análisis del Login de Swag Labs](#Análisis)
-3. [Matriz de Casos de Prueba](#Matriz)
-4. [Contenido del Repositorio](#contenido)
+1. [Contenido del Repositorio](#id1)
 
 
 ### Objetivo del Repositorio
