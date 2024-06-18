@@ -53,6 +53,26 @@ estructurados y fáciles de mantener.
 
 [```Jenkins```](https://www.jenkins.io/) Servidor de integración continua que se utilizará para la ejecución de pruebas automatizadas.
 
+### La estructura de directorios del proyecto
+
+La estructura de directorios estándar utilizada en la mayoría de los proyectos Serenity generalmente sigue un patrón que facilita la organización y la gestión del proyecto. A continuación, te proporciono un ejemplo de cómo podría ser esta estructura de directorios:
+
+src
+  + test
+    + java
+      + swaglabs
+        + actions
+           + InventorySteps
+           + LoginSteps  
+        + pageobjects
+           + InventoryPage
+           + LoginPage 
+        + stepdefinitions
+           + LoginStepDefs
+        + utils
+           + CucumberTestSuite                         
+      + resources
+
 ### Contribuir
 ¡Las contribuciones son bienvenidas! Si tienes ejemplos adicionales, correcciones o mejoras, no dudes en hacer un fork del repositorio y enviar un pull request.
 
